@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocktailBar</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Choose your cocktail</h1>
+    <form method="post" action="/submit">
+        <input type="text" id="seachCocktail" placeholder="Search for your cocktail..." name="choose">
+        <input type="submit" id="submit" >
+        <button><a href="additems.ejs">Create</a></button>
+    </form>
+    
+    <div class="content" ><% if(locals){ %>
+       <h2>  <%= content.name  %></h2>
+
+       <p> <%= content.recipe %></p>
+       <p> <%= content.preparation %></p>
+        
+       
+         
+    </div> <% } %>
+</body>
+</html>

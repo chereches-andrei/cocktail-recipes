@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+}
+
+body{
+    background: linear-gradient( rgb(123, 230, 230), rgba(43, 189, 116, 0.267));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+h1{
+    font-size:50px;
+    
+
+}
+form input[type='text']{
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.226);
+    border:none;
+    width:30rem;
+    
+}
+form input[type="submit"]{
+    padding:10px;
+    font-size: 15px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+    transition:.8s;
+    border:none;
+}
+form input[type="submit"]:hover{
+    background-color: white;
+    color:black;
+}
+form input[type="button"]{
+    background-color: blueviolet;
+    width:100px;
+}
+button {
+    padding:10px;
+    font-size: 15px;
+    
+    background-color: rgba(255, 255, 255, 0.486);
+    color:black;
+    cursor: pointer;
+   
+    border:none;
+    
+}
+button a {
+    padding:10px;
+    font-size: 15px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    transition:.8s;
+}
+button a:hover{
+    background-color: black;
+    color:white;
+}
+.content{
+    width:600px;
+}
+.content h2{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.253);
+    padding:10px;
+}
+.content h3{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}

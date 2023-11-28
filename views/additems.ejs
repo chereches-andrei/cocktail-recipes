@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add cocktails</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Add your cocktail here</h1>
+    <form method="post" action="/add">
+        <input type="text" placeholder="name" name="addname">
+        <input type="text" placeholder="recipe" name="addrecipe">
+        <input type="text" placeholder="preparation" name="addpreparation">
+        <select name="type">
+            <option>Alcool</option>
+            <option>Non-Alcool</option>
+        </select>
+        <input type="submit" name="addCocktail">
+    </form>
+    <div class="added">
+        <h2> <%= addedItem %></h2>
+    </div>
+</body>
+</html>
