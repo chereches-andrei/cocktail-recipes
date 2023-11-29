@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Add your cocktail here</h1>
+    <h1 class="addcocktail">Add your cocktail here</h1>
     <form method="post" action="/add">
         <input type="text" placeholder="name" name="addname">
         <input type="text" placeholder="recipe" name="addrecipe">
@@ -19,6 +19,7 @@
         </select>
         <input type="submit" name="addCocktail">
     </form>
+    
     <div class="added">
         <h2> <%= addedItem %></h2>
     </div>

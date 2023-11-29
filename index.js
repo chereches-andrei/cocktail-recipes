@@ -56,11 +56,12 @@ app.post('/add', (req,res)=>{
     // a statment that will show the user if the post was added to the array or not
     if(cocktails.includes(newPost)){
         res.render('additems.ejs', {addedItem: "Succesfuly added!"})
+       
     } else{
         res.status(500)
         res.render('additems.ejs', {addedItem: "Something went wrong! Try again!"})
     }
-    console.log(newPost)
+  
 })
 
 

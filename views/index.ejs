@@ -8,14 +8,14 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="form">
     <h1>Choose your cocktail</h1>
     <form method="post" action="/submit">
         <input type="text" id="seachCocktail" placeholder="Search for your cocktail..." name="choose">
         <input type="submit" id="submit" >
         <button><a href="additems.ejs">Create</a></button>
     </form>
-    
+</div>
     <div class="content" ><% if(locals){ %>
        <h2>  <%= content.name  %></h2>
 

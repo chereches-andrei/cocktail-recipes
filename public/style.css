@@ -84,3 +84,35 @@ button a:hover{
     margin-bottom: 20px;
     
 }
+
+@media screen and (max-width:500px){
+    
+    body{
+        min-width: 100%;
+        
+    }
+    .form{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .form h1{
+        font-size: 20px;
+    }
+    form{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    form input[type="text"]{
+        width:100%;
+    }
+    .addcocktail{
+        font-size: 30px;
+    }
+}
